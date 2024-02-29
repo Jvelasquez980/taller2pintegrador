@@ -104,4 +104,4 @@ def statistics_view_genre(request):
     graphic = base64.b64encode(image_png)
     graphic = graphic.decode('utf-8')
     # Renderizar la plantilla statistics.html con la gráfica
-    return render(request, 'statistics.html', {'graphic': graphic})
+    return render(request, 'statisticsgen.html', {'graphic': graphic})
